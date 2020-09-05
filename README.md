@@ -1,16 +1,10 @@
 # IBMYes
 
-**测速节点已经停用，无法测试**
-
-**自动重启可能失效，IBM的API节点似乎失效**
-
-**本项目初衷是想学习CI/CD以及容器的使用，任何与此无关的问题将不做回复。**
-
 本项目包括3部分
 
 1. IBM Cloud Fonudray搭建应用
 2. 利用Github的Actions 每周重启 IBM Cloud Fonudray
-3. ~~Cloudflare 高速节点中转~~
+3. Cloudflare 高速节点中转~~
 
 # 使用IBM Cloud Fonudray搭建V2Ray
 
@@ -47,7 +41,7 @@
 打开命令行，右上角选择相应的地区（Dallas），粘贴一键安装脚本：
 
 ```shell
-wget --no-check-certificate -O install.sh https://raw.githubusercontent.com/CCChieh/IBMYes/master/install.sh && chmod +x install.sh  && ./install.sh
+wget --no-check-certificate -O install.sh https://raw.githubusercontent.com/Davidlasky/IBMYes/master/install.sh && chmod +x install.sh  && ./install.sh
 ```
 
 ![image-20200615210944753](img/README/image-20200615210944753.png)
@@ -100,7 +94,7 @@ RESOURSE_ID // 资源组ID
 进入命令行先执行
 
 ```shell
-ibmcloud login
+ibmcloud login -u youremail -p yourpassword
 ```
 
 输入邮箱和密码。
